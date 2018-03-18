@@ -1,3 +1,5 @@
+import './styles.css';
+
 function parseQuery(queryString) {
     var query = {};
     var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
@@ -9,7 +11,7 @@ function parseQuery(queryString) {
 }
 
 function createAudioElement(src, time) {
-    var container = document.getElementById('container');
+    var container = document.body;
     var audio = document.createElement('audio');
     audio.controls = true;
     audio.autoplay = true;
