@@ -1,0 +1,25 @@
+{
+  "name": "audio-player",
+  "version": "0.0.0",
+  "description": "Audio playing",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bnjmnhndrsn/audio-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bnjmnhndrsn/audio-test/issues"
+  },
+  "homepage": "https://github.com/bnjmnhndrsn/audio-test#readme"
+}
