@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
-module.exports = {
+module.exports = (env) => ({
+    mode: env.production ? 'production' : 'development',
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
@@ -30,7 +31,12 @@ module.exports = {
                     'style-loader',
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
             }
         ]
     }
-};
+});

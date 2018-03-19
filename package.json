@@ -5,6 +5,7 @@
   "main": "script.js",
   "dependencies": {},
   "devDependencies": {
+    "babel-loader": "^7.1.4",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "html-webpack-plugin": "^3.0.6",
@@ -14,9 +15,10 @@
     "webpack-dev-server": "^3.1.1"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "build:dev": "./node_modules/.bin/webpack --config webpack.config.js --env",
+    "build:production":"./node_modules/.bin/webpack --config webpack.config.js --env.production",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack-dev-server --open"
+    "start": "./node_modules/.bin/webpack-dev-server --open --env"
   },
   "repository": {
     "type": "git",
