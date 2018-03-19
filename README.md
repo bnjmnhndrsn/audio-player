@@ -1,5 +1,12 @@
 # audio-player
 
+Access the demo at https://bnjmnhndrsn.github.io/audio-player/.
+
+URL Params:
+- src : url of audio file
+- time : seconds into the file to start playback at
+
+
 TODO
 - [ ] Responsive Design
 - [ ] Save progress in local storage
