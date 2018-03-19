@@ -1,6 +1,6 @@
 # audio-player
 
-Access the demo at https://bnjmnhndrsn.github.io/audio-player/.
+Access the demo at https://bnjmnhndrsn.github.io/audio-player/dist.
 
 URL Params:
 - src : url of audio file
