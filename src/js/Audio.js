@@ -15,8 +15,25 @@ export default class Audio {
             }
             this.audio.play();
             this.audio.removeEventListener('canplay', callback);
+            this.playing = true;
         };
 
         this.audio.addEventListener('canplay', callback);
+    }
+
+    togglePlayback(){
+        if (this.audio.paused) {
+            this.audio.play();
+        } else {
+            this.audio.pause();
+        }
+    }
+
+    skipForward(){
+        this.audio.currentTime += 15;
+    }
+
+    skipBack(){
+        this.audio.currentTime -= 15;
     }
 }
