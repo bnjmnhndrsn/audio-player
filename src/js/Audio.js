@@ -1,6 +1,7 @@
 export default class Audio {
     constructor(){
         this.el = document.createElement('div');
+        this.el.classList.add('audio-container');
         this.audio = document.createElement('audio');
         this.audio.controls = true;
         this.el.appendChild(this.audio);
