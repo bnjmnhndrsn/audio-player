@@ -2,15 +2,17 @@ import queryString from 'query-string';
 import Audio from './Audio';
 
 export default class App {
-    init(){
+    constructor(){
+        this.el = document.createElement('div');
+        this.el.classList.add('container');
+    }
+
+    createAudio(){
         const parsed = queryString.parse(location.search);
-        const audio = new Audio();
-        this.container = document.createElement('div');
-        this.container.classList.add('container');
-        document.body.appendChild(this.container);
-        this.container.appendChild(audio.el);
+        this.audio = new Audio();
+        this.el.appendChild(this.audio.el);
         if (parsed.src) {
-            audio.setSrc(parsed.src, parsed.time);
+            this.audio.setSrc(parsed.src, parsed.time);
         }
     }
 }
