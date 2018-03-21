@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "Audio playing",
   "main": "script.js",
-  "dependencies": {},
+  "dependencies": {
+    "query-string": "^6.0.0"
+  },
   "devDependencies": {
     "babel-loader": "^7.1.4",
     "clean-webpack-plugin": "^0.1.19",
@@ -16,7 +18,7 @@
   },
   "scripts": {
     "build:dev": "./node_modules/.bin/webpack --config webpack.config.js --env",
-    "build:production":"./node_modules/.bin/webpack --config webpack.config.js --env.production",
+    "build:production": "./node_modules/.bin/webpack --config webpack.config.js --env.production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack-dev-server --open --env"
   },
