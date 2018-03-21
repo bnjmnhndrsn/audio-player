@@ -4,6 +4,7 @@ import Audio from './Audio';
 export default class App {
     constructor(){
         this.el = document.createElement('div');
+        this.el.classList.add('container');
     }
 
     createAudio(){
