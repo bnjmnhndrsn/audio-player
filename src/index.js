@@ -3,5 +3,6 @@ import App from './js/app';
 
 document.addEventListener('DOMContentLoaded', function() {
     const app = new App();
-    app.init();
+    document.body.appendChild(app.el);
+    app.createAudio();
 });
