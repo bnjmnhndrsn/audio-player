@@ -1,7 +1,7 @@
 # audio-player
 
 TODO
-- [ ] Responsive Design
+- [x] Responsive Design (Ben)
 - [ ] Save progress in local storage
 - [ ] Save other viewed files in local storage
 - [ ] Basic keyboard command support
